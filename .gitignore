@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+data/raw/*
+data/processed/*
+venv_prophet/
+lightning_logs/
+.lr_find_*.ckpt
