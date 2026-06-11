@@ -123,3 +123,31 @@ python main.py --models
 ```
 
 Os arquivos de saída são salvos em `data/processed/`.
+
+### 7. Executar o notebook de análise exploratória
+
+Abra o arquivo `notebooks/01_exploratory_analysis.ipynb` diretamente no **VS Code** com a extensão **Jupyter** instalada.
+
+> Recomendamos o VS Code em vez do Jupyter Lab/Notebook clássico para evitar problemas com caminhos longos no Windows.
+
+**Selecionar o kernel correto:**
+
+1. Abra o notebook no VS Code
+2. Clique no seletor de kernel (canto superior direito)
+3. Escolha **Python 3.11 (venv_prophet)** — o ambiente criado no passo 4
+
+**Executar todas as células:**
+
+- Menu **Run → Run All Cells**, ou `Ctrl+Shift+P` → `Jupyter: Run All Cells`
+
+As células são independentes entre si: cada uma abre sua própria conexão com o banco, então você pode rodar qualquer seção isoladamente sem precisar executar as anteriores.
+
+**Seções do notebook:**
+
+| Seção | Conteúdo |
+|---|---|
+| 1.2 Curva Epidêmica | Casos confirmados por semana, um subplot por ano |
+| 1.3 Mapa de Calor UF×Ano | Distribuição relativa de casos por estado ao longo dos anos |
+| 1.4 Pirâmide Etária | Casos por faixa etária e sexo |
+| 1.5 Gestantes e Óbitos | Evolução trimestral de gestantes + desfechos clínicos |
+| 1.6 Tendência por UF | Ranking de crescimento/queda por estado, linhas normalizadas |
