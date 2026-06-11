@@ -133,7 +133,7 @@ Executar `jupyter notebook --debug` e verificar se aparece `FileNotFoundError` o
 Aplicar uma das soluções acima. Depois:
 ```powershell
 .\venv_prophet\Scripts\activate
-$env:PGDATABASE="zika"; $env:PGUSER="postgres"; $env:PGPASSWORD="lucas01"; $env:PGHOST="localhost"; $env:PGPORT="5432"
+$env:PGDATABASE="zika"; $env:PGUSER="postgres"; $env:PGPASSWORD="sua_senha"; $env:PGHOST="localhost"; $env:PGPORT="5432"
 jupyter lab notebooks\01_exploratory_analysis.ipynb
 ```
 Executar todas as células e salvar com os outputs visíveis — isso é o que o avaliador verá.

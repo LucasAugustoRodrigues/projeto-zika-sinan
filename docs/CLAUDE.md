@@ -157,8 +157,7 @@ $env:PGHOST="localhost"
 $env:PGPORT="5432"
 ```
 
-Os defaults dos scripts assumem essas variáveis. A senha `lucas01` está hardcoded
-como fallback em `DB_PARAMS`/`DB_URL` — trocar antes de versionar.
+Os defaults dos scripts assumem essas variáveis. O fallback de senha nos scripts é `""` (string vazia) — defina `PGPASSWORD` antes de rodar.
 
 ---
 
@@ -211,7 +210,7 @@ Alternativa: `New-Item -ItemType Junction -Path "C:\zika" -Target "<caminho comp
 1. **Executar o notebook e salvar com outputs** (único pendente obrigatório):
    ```powershell
    .\venv_prophet\Scripts\activate
-   $env:PGDATABASE="zika"; $env:PGUSER="postgres"; $env:PGPASSWORD="lucas01"; $env:PGHOST="localhost"; $env:PGPORT="5432"
+   $env:PGDATABASE="zika"; $env:PGUSER="postgres"; $env:PGPASSWORD="sua_senha"; $env:PGHOST="localhost"; $env:PGPORT="5432"
    # Abrir notebooks\01_exploratory_analysis.ipynb no VS Code e executar todas as células
    ```
 
@@ -242,7 +241,7 @@ Alternativa: `New-Item -ItemType Junction -Path "C:\zika" -Target "<caminho comp
 .\venv_prophet\Scripts\activate
 
 # definir variáveis (ajustar senha)
-$env:PGDATABASE="zika"; $env:PGUSER="postgres"; $env:PGPASSWORD="lucas01"; $env:PGHOST="localhost"; $env:PGPORT="5432"
+$env:PGDATABASE="zika"; $env:PGUSER="postgres"; $env:PGPASSWORD="sua_senha"; $env:PGHOST="localhost"; $env:PGPORT="5432"
 
 # rodar pipeline completo
 python main.py --all

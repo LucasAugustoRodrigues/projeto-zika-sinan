@@ -4,5 +4,6 @@ __pycache__/
 data/raw/*
 data/processed/*
 venv_prophet/
+.env
 lightning_logs/
 .lr_find_*.ckpt

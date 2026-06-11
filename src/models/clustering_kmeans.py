@@ -21,7 +21,7 @@ log = logging.getLogger(__name__)
 DB_URL = (
     f"postgresql+psycopg2://"
     f"{os.getenv('PGUSER', 'postgres')}:"
-    f"{os.getenv('PGPASSWORD', 'lucas01')}@"
+    f"{os.getenv('PGPASSWORD', '')}@"
     f"{os.getenv('PGHOST', 'localhost')}:"
     f"{os.getenv('PGPORT', '5432')}/"
     f"{os.getenv('PGDATABASE', 'zika')}"

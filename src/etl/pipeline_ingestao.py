@@ -18,7 +18,7 @@ DB_PARAMS = {
     "port":     int(os.getenv("PGPORT", "5432")),
     "dbname":   os.getenv("PGDATABASE", "zika"),
     "user":     os.getenv("PGUSER",     "postgres"),
-    "password": os.getenv("PGPASSWORD", "lucas01"),
+    "password": os.getenv("PGPASSWORD", ""),
 }
 
 CSV_PATH   = os.getenv("CSV_PATH", "data/raw/ZIKA_BR_2018_2026_UNIFICADO.csv")
